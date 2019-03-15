@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Gerai Cinta</string>
+    <string name="faq1">
+A             : Untuk saat ini kami menerima pembayaran dengan metode Transfer antar Bank. Kami memiliki rekening bank BCA, Mandiri, dan CIMB Niaga. Untuk informasi nomor rekening bisa ditanyakan  melalui kontak langsung dengan kami di BBM/Whatsapp/LINE. Karena kami menggunakan kurir untuk melakukan pengiriman, maka kami meminta pembayaran harus dilakukan dimuka (sebelum barang pesanan kami kirim kepada Anda).</string>
+    <string name="faq2">A : Barang yang sudah dibeli tidak dapat dikembalikan, karena kami tidak pernah menjual barang second. Harap pelanggan untuk dapat teliti sebelum membeli. </string>
+    <string name="faq3">A : Barang yang terdapat pada aplikasi semuanya tersedia, jika terdapt stok barang yg sudah habis, kami tidak akan menampilkanya pada produk aplikasi</string>
+    <string name="gerai_cinta_detail">Gerai cita dapat menjadi solusi bagi wanita muslimah yang ingin tampil cantik namun tetap syar\'i.\n\n
+    Produk Gerai Cinta dikemas secara kreatif dan inofatif, setiap produk yang dikeluarkan secara tidak langsung dapat menimbulkan rasa percaa
+        diri epada mereka yang memakainya.\n\n
+    Karena Produk yang kami keluarkan sangat elegan, eksklusif dan limited edition.\n\n</string>
+</resources>

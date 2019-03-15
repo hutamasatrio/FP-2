@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product_Beli"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="menu transaksi"
+        android:textSize="40dp"
+        android:layout_gravity="center"/>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <ImageView
+                android:id="@+id/gambarakhir"
+                android:layout_gravity="center_vertical"
+                android:background="#000"
+                android:layout_width="170dp"
+                android:layout_height="170dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+            <TextView
+                android:id="@+id/titleakhir"
+                android:textSize="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="nama barang"
+                android:layout_gravity="center"/>
+            <TextView
+                android:id="@+id/deskakhir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="deskripsi"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="harga"
+                android:id="@+id/hargaakhir"/>
+        </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Masukan Alamat"
+        android:textSize="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:textSize="15dp"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/alamatakhir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:hint="alamat"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Pilih Bank Tujuan"
+            android:textSize="15dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="15dp"
+            android:paddingLeft="10dp"
+            android:textStyle="bold"/>
+        <Spinner
+            android:paddingLeft="10dp"
+            android:autofillHints="atm"
+            android:id="@+id/spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/tambah"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_below="@id/frame"
+    android:layout_centerHorizontal="true"
+    android:gravity="center_horizontal"
+    android:paddingTop="10dp">
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="-"
+    android:onClick="decrement"/>
+    <TextView
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:text="0"
+    android:textAlignment="center"
+    android:id="@+id/quantity"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="+"
+    android:onClick="increment"/>
+
+    </LinearLayout>
+    <LinearLayout
+    android:id="@+id/order"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_below="@+id/tambah"
+    android:layout_centerHorizontal="true"
+    >
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:onClick="Submitorder"
+    android:text="Tampilkan harga"
+    android:layout_marginBottom="15dp"
+    android:layout_gravity="center"/>
+    <TextView
+    android:id="@+id/total"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:textSize="20dp"
+    android:text="total"
+    android:gravity="center"/>
+        <Button
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="beli"
+            android:id="@+id/beli"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".ViewProduk"
+    android:background="@drawable/background"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:paddingTop="10dp"
+            android:id="@+id/merk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Merk "
+            android:textSize="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"/>
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_below="@+id/merk"
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+                android:id="@+id/gambarL"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:background="#2d2d2d"
+                />
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/category"/>
+
+        </FrameLayout>
+        <TextView
+            android:layout_marginBottom="10dp"
+            android:layout_below="@id/frame"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hargabarang"
+            android:textSize="25dp"
+            android:text="harga"
+            android:layout_centerHorizontal="true"/>
+        <!--<LinearLayout-->
+            <!--android:id="@+id/tambah"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_below="@id/frame"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center_horizontal"-->
+            <!--android:paddingTop="50dp">-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="-"-->
+                <!--android:onClick="decrement"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="30dp"-->
+                <!--android:layout_height="30dp"-->
+                <!--android:text="0"-->
+                <!--android:textAlignment="center"-->
+                <!--android:id="@+id/quantity"/>-->
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="+"-->
+                <!--android:onClick="increment"/>-->
+
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:id="@+id/order"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_below="@+id/tambah"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--&gt;-->
+
+            <!--<Button-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:onClick="Submitorder"-->
+                <!--android:text="order"-->
+                <!--android:layout_marginBottom="15dp"-->
+                <!--android:layout_gravity="center"/>-->
+            <!--<TextView-->
+                <!--android:id="@+id/total"-->
+                <!--android:layout_width="400dp"-->
+                <!--android:layout_height="60dp"-->
+                <!--android:textSize="35dp"-->
+                <!--android:text="total"-->
+                <!--android:gravity="center"/>-->
+        <!--</LinearLayout>-->
+
+
+        <LinearLayout
+            android:id="@+id/linier"
+            android:layout_marginTop="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/hargabarang">
+            <Button
+                android:id="@+id/bt_alert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="beli"
+                android:onClick="beli"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_centerHorizontal="true"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/linier"
+            android:layout_marginTop="25dp"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
